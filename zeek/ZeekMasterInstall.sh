@@ -8,7 +8,7 @@ cd
 yum -y install cmake make gcc gcc-c++ flex bison jemalloc-devel libpcap-devel openssl-devel platform-python-devel swig zlib-devel
 yum -y --enablerepo=extras install epel-release
 yum -y install libmaxminddb-devel
-wget https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-City&license_key=qYMmUa3EXUCtzEw9&suffix=tar.gz
+wget https://download.maxmind.com/app/geoip_download
 tar xzvf geoip_download*
 mkdir /usr/share/GeoIP 
 cd
