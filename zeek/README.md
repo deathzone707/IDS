@@ -11,4 +11,7 @@
 7) generate public key and add public key to workers
 
 # For Workers
-1) on each worker: echo "PermitRootLogin yes" |tee -a /etc/ssh/sshd_config
+1) vim /etc/yum.repos.d/CentOS-PowerTools.repo
+  change enabled to value 1 (enabled=1)
+2) ZeekWorkerInstall.sh
+3) on each worker: echo "PermitRootLogin yes" |tee -a /etc/ssh/sshd_config
